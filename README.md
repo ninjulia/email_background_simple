@@ -22,22 +22,22 @@ Users should be able to:
 - iPhone12 (iOS 13)
 - iPhone13 (iOS 14)
 
-## Desktop
+### Desktop
 
 - Apple Mail
 - Outlook
 
-## Web Clients
+### Web Clients
 
 - Gmail (Chrome, Edge, FireFox)
 - Office365 (Chrome, Edge, FireFox)
 - Outlook.com (Chrome, Edge, FireFox)
 - Yahoo (Chrome, Edge, FireFox)
 
-### Screenshot
+## Screenshot
 
 ![screenshot](screenshot.png?raw=true)
 
-### Links
+## Links
 
 - View Email: [https://ninjulia.github.io/EMAIL_Background-Simple/](https://ninjulia.github.io/EMAIL_Background-Simple/)
