@@ -9,7 +9,27 @@
     <meta name="x-apple-disable-message-reformatting">
     <title>Sample Email - Background Image</title>
 
-    <style>
+    <style type="text/css">
+        a:hover {
+            color: #050038 !important;
+            text-decoration: none !important
+        }
+
+        a.button:hover {
+            color: #ffffff !important;
+            background-color: #050038 !important
+        }
+
+        .button-td:hover {
+            background: #050038 !important;
+            border-color: #050038 !important
+        }
+
+        .button-a:hover {
+            background: #050038 !important;
+            border-color: #050038 !important
+        }
+
         .ExternalClass {
             width: 100%;
         }
@@ -21,62 +41,6 @@
         .ExternalClass td,
         .ExternalClass div {
             line-height: 100%;
-        }
-
-        body {
-            height: 100% !important;
-            margin: 0 !important;
-            padding: 0 !important;
-            width: 100% !important;
-        }
-
-        body,
-        table,
-        td,
-        a {
-            -webkit-text-size-adjust: 100%;
-            -ms-text-size-adjust: 100%;
-            font-size: 0;
-        }
-
-        img {
-            -ms-interpolation-mode: bicubic;
-        }
-
-        div[style*="margin: 16px 0"] {
-            margin: 0 !important;
-        }
-
-        table,
-        td {
-            mso-table-lspace: 0pt;
-            mso-table-rspace: 0pt;
-        }
-
-        table {
-            border-spacing: 0 !important;
-            border-collapse: collapse !important;
-            table-layout: fixed !important;
-            margin: 0 auto !important;
-        }
-
-        table table table {
-            table-layout: auto;
-        }
-
-        p,
-        div {
-            margin: 0;
-            padding: 0;
-            margin-bottom: 0;
-        }
-
-        img {
-            border: 0;
-            height: auto;
-            line-height: 100%;
-            outline: none;
-            text-decoration: none;
         }
 
         *[x-apple-data-detectors],
@@ -93,152 +57,27 @@
             line-height: inherit !important;
         }
 
-        u+#body a {
-            color: inherit;
-            text-decoration: none;
-            font-size: inherit;
-            font-family: inherit;
-            font-weight: inherit;
-            line-height: inherit;
-        }
-
-        #MessageViewBody a {
-            color: inherit;
-            text-decoration: none;
-            font-size: inherit;
-            font-family: inherit;
-            font-weight: inherit;
-            line-height: inherit;
-        }
-
-        .a6S {
-            display: none !important;
-            opacity: 0.01 !important;
-        }
-
-        img.g-img+div {
-            display: none !important;
-        }
-
-
-        .button-link {
-            text-decoration: none !important;
-        }
-
-        body,
-        #body_style {
-            background-color: #f3f4f8;
-            color: #0a0a0a;
-        }
-
-        .email-container {
-            background-color: #f3f4f8;
-            color: #0a0a0a;
-        }
-
-        p,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        li,
-        span {
-            font-family: Helvetica, Arial, sans-serif;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 1.43 !important;
-        }
-
-        .preheader {
-            font-size: 0px;
-            line-height: 1px;
-            display: none;
-            max-height: 0px;
-            max-width: 0px;
-            opacity: 0;
-            overflow: hidden;
-            mso-hide: all;
-            color: #f3f4f8;
-        }
-
-        a {
-            color: #050038;
-            font-weight: 600;
-            text-decoration: underline;
-        }
-
-        a:hover {
-            color: #050038 !important;
-            text-decoration: none !important;
-        }
-
-        a.button:hover {
-            color: #ffffff !important;
-            background-color: #050038 !important;
-        }
-
         @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
-
-            /* iPhone 6 and 6+ */
             .email-container {
                 min-width: 375px !important;
             }
+        }
 
+        @media (prefers-color-scheme: dark) {
+
+            .darkmode,
+            [data-ogsc] .darkmode {
+                background-color: #ffffff !important;
+            }
+
+            h1,
+            [data-ogsc] h1,
+            span.darkmode-txt,
+            [data-ogsc] .darkmode-txt {
+                color: #050038 !important;
+            }
         }
     </style>
-
-    <!-- Progressive Enhancements -->
-    <style>
-        .button-td,
-        .button-a {
-            transition: all 100ms ease-in;
-        }
-
-        .button-td:hover,
-        .button-a:hover {
-            background: #050038 !important;
-            border-color: #050038 !important;
-        }
-
-        @media screen and (max-width: 480px) {
-
-            .fluid {
-                width: 100% !important;
-                max-width: 100% !important;
-                height: auto !important;
-                margin-left: auto !important;
-                margin-right: auto !important;
-            }
-
-            .stack-column,
-            .stack-column-center {
-                display: block !important;
-                width: 100% !important;
-                max-width: 100% !important;
-                /*direction: ltr !important;*/
-            }
-
-            .stack-column-center {
-                text-align: center !important;
-            }
-
-            .center-on-narrow {
-                text-align: center !important;
-                display: block !important;
-                margin-left: auto !important;
-                margin-right: auto !important;
-                float: none !important;
-            }
-
-            table.center-on-narrow {
-                display: inline-block !important;
-            }
-
-        }
-    </style>
-
     <!--[if gte mso 9]>
     <xml>
         <o:OfficeDocumentSettings>
@@ -247,70 +86,75 @@
         </o:OfficeDocumentSettings>
     </xml>
     <![endif]-->
-
 </head>
 
-<body width="100%" bgcolor="#f3f4f8" style="margin: 0; mso-line-height-rule: exactly;">
+<body width="100%" bgcolor="#f3f4f8"
+    style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;background-color:#f3f4f8;color:#0a0a0a;height:100% !important;margin:0 !important;padding:0 !important;width:100% !important;margin: 0; mso-line-height-rule: exactly;">
     <center style="width: 100%; background: #f3f4f8; text-align: left;">
-
-        <!-- Visually Hidden Preheader Text : BEGIN -->
         <div class="preheader"
-            style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: sans-serif;">
+            style="margin:0;padding:0;margin-bottom:0;font-size:0px;line-height:1px;display:none;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;color:#f3f4f8;display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: sans-serif;">
             Lorem ipsum dolor sit amet consectetur adipisicing
             elit.&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
         </div>
-        <!-- Visually Hidden Preheader Text : END -->
-
+        <span
+            style="display:none !important;visibility:hidden;mso-hide:all;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">
+            <!--EOA COMMENT: This snippet of white space has been added to ensure short preview text does not run into the following text of your email.-->
+            &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;</span>
         <!--[if mso]>
-            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" align="center">
-            <tr>
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" align="center">
+          <tr>
             <td align="center"  class="email-container">
-            <![endif]-->
-        <div style="max-width: 600px; margin: auto;" class="email-container">
+      <![endif]-->
+        <div style="margin:0;padding:0;margin-bottom:0;background-color:#f3f4f8;color:#0a0a0a;max-width: 600px; margin: auto;"
+            class="email-container">
             <!--[if mso]>
-            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" align="center">
+          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" align="center">
             <tr>
-            <td>
-            <![endif]-->
-
-            <!-- Email Body : BEGIN -->
+              <td>
+        <![endif]-->
             <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%"
-                style="max-width: 600px;" class="email-container">
+                style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;mso-table-lspace:0pt;mso-table-rspace:0pt;background-color:#f3f4f8;color:#0a0a0a;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;max-width: 600px;"
+                class="email-container">
                 <tr>
-                    <td>
+                    <td
+                        style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;mso-table-lspace:0pt;mso-table-rspace:0pt;">
                         <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center"
-                            width="100%" style="max-width: 600px;">
-
-                            <!-- HEADER : BEGIN -->
+                            width="100%"
+                            style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;mso-table-lspace:0pt;mso-table-rspace:0pt;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;max-width: 600px;">
                             <tr>
-                                <td style="padding:43px 0 0;">&nbsp;</td>
+                                <td
+                                    style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;mso-table-lspace:0pt;mso-table-rspace:0pt;padding:43px 0 0;">
+                                    &nbsp;</td>
                             </tr>
                             <tr>
                                 <td bgcolor="#ffffff"
-                                    style="background-color:#ffffff; border-radius: 8px; padding:0px 40px;">
+                                    style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;mso-table-lspace:0pt;mso-table-rspace:0pt;background-color:#ffffff; border-top-left-radius: 8px; border-top-right-radius: 8px; padding:0px 40px;">
                                     <header>
                                         <table role="presentation" cellspacing="0" cellpadding="0" border="0"
-                                            width="100%">
+                                            width="100%"
+                                            style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;mso-table-lspace:0pt;mso-table-rspace:0pt;table-layout:auto;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;">
                                             <tr>
                                                 <td align="left" valign="middle" width="50%"
-                                                    style="padding: 35px 0; text-align: left; width: 50%;">
-                                                    <a href="#" target="_blank">
-                                                        <img src="images/miro-256x70.png" width="110" height="30"
-                                                            alt="logo" border="0"
-                                                            style="height: auto; font-family: Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.3; color: #0a0a0a;">
+                                                    style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 35px 0; text-align: left; width: 50%;">
+                                                    <a href="#" target="_blank"
+                                                        style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;color:#050038;font-weight:600;text-decoration:underline;">
+                                                        <img src="https://ninjulia.github.io/email_background_simple/images/logo.png"
+                                                            width="110" height="30" alt="logo" border="0"
+                                                            style="-ms-interpolation-mode:bicubic;border:0;height:auto;line-height:100%;outline:none;text-decoration:none;height: auto; font-family: Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.3; color: #0a0a0a;">
                                                     </a>
                                                 </td>
                                                 <td align="right" valign="middle" width="50%"
-                                                    style="padding: 35px 0; text-align: right; width: 50%;">
-                                                    <div>
+                                                    style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 35px 0; text-align: right; width: 50%;">
+                                                    <div style="margin:0;padding:0;margin-bottom:0;">
                                                         <!--[if mso]>
-                                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://github.com/ninjulia" style="height:48px;v-text-anchor:middle;width:128px;" arcsize="9%" strokecolor="#050038" fillcolor="#ffffff">
-                                                <w:anchorlock/>
-                                                <center style="color:#050038;font-family:sans-serif;font-size:13px;font-weight:bold;">Go to Miro</center>
-                                            </v:roundrect>
-                                            <![endif]--><a href="https://github.com/ninjulia"
-                                                            style="background-color:#ffffff;border:1px solid #050038;border-radius:4px;color:#050038;display:inline-block;font-family:sans-serif;font-size:13px;font-weight:bold;line-height:48px;text-align:center;text-decoration:none;width:128px;-webkit-text-size-adjust:none;mso-hide:all;">Go
-                                                            to Miro</a>
+                                                          <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://github.com/ninjulia" style="height:48px;v-text-anchor:middle;width:128px;" arcsize="9%" strokecolor="#050038" fillcolor="none">
+                                                            <w:anchorlock/>
+                                                              <center style="color:#050038;font-family:sans-serif;font-size:13px;font-weight:bold;">Open the App</center>
+                                                            </v:roundrect>
+                                                        <![endif]-->
+                                                        <a href="https://github.com/ninjulia"
+                                                            style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;color:#050038;font-weight:600;text-decoration:underline;border:1px solid #050038;border-radius:4px;color:#050038;display:inline-block;font-family:sans-serif;font-size:13px;font-weight:bold;line-height:48px;text-align:center;text-decoration:none;width:128px;-webkit-text-size-adjust:none;mso-hide:all;">Open
+                                                            the App</a>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -318,65 +162,73 @@
                                     </header>
                                 </td>
                             </tr>
-                            <!-- HEADER : END -->
-
-                            <!-- HERO : BEGIN -->
                             <tr>
-
-                                <td background="images/pexels-nick-collins-1293120.png" bgcolor="#f55319" width="600"
-                                    valign="top"
-                                    style="background:url(images/pexels-nick-collins-1293120.png) #f55319; background-repeat: no-repeat; background-size: contain; background-position: center center;">
+                                <td background="https://ninjulia.github.io/email_background_simple/images/bg-hero.png"
+                                    width="600" height="292" valign="top"
+                                    style="background:url(https://ninjulia.github.io/email_background_simple/images/bg-hero.png) #ffffff; background-repeat: no-repeat; background-size: cover; background-position: center;"
+                                    class="darkmode">
                                     <!--[if gte mso 9]>
-                        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;">
-                          <v:fill type="tile" src="images/pexels-nick-collins-1293120.png" color="#f55319" />
-                          <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
-                        <![endif]-->
-                                    <div>
+                                    	<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:292px;">
+                                      <v:fill type="frame" src="https://ninjulia.github.io/email_background_simple/images/bg-hero.png" />
+                                      <v:textbox inset="0,0,0,0">
+                                    <![endif]-->
+                                    <div style="margin:0;padding:0;margin-bottom:0;">
                                         <table role="presentation" cellspacing="0" cellpadding="0" border="0"
-                                            width="100%">
+                                            width="100%"
+                                            style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;mso-table-lspace:0pt;mso-table-rspace:0pt;table-layout:auto;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;">
                                             <tr>
-                                                <td style="padding: 40px 40px 20px 40px; font-family: Arial, Helvetica, sans-serif; font-size: 42px; font-weight: 700; line-height: 1.24;">
-                                                    <h1 style="color:#050038; font-family: Arial, Helvetica, sans-serif; font-size: 42px; font-weight: 700; line-height: 1.24; margin:0; padding:0;">Make your concepts click with your team</h1>
+                                                <td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 40px 40px 20px 40px; font-family: Arial, Helvetica, sans-serif; font-size: 42px; font-weight: 700; line-height: 1.24;"
+                                                    class="darkmode-txt">
+                                                    <h1 style="font-family:Helvetica, Arial, sans-serif;font-size:14px;font-weight:400;line-height:1.43 !important;color:#050038; font-family: Arial, Helvetica, sans-serif; font-size: 42px; font-weight: 700; line-height: 1.24; margin:0; padding:0;"
+                                                        class="darkmode-txt">Esse earum cumque facere magni molestiae
+                                                    </h1>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td style="padding: 0px 40px 40px 40px; color:#050038; Arial, Helvetica, sans-serif; font-size: 20px; font-weight: 400; line-height: 1.4; opacity: 0.6;">
-                                                    <p style="Margin-top:0; Margin-bottom:0;">Lorem ipsum dolor sit amet
-                                                        consectetur adipisicing elit. Eos iusto quo, necessitatibus
-                                                        cupiditate alias nulla dolorum quia non. Deleniti eum quos
-                                                        exercitationem cupiditate enim vel quae sapiente laborum
-                                                        veritatis facilis.</p>
+                                                <td style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0px 40px 40px 40px; color:#050038; Arial, Helvetica, sans-serif; font-size: 20px; font-weight: 400; line-height: 1.4; opacity: 0.6;"
+                                                    class="darkmode-txt">
+                                                    <span class="darkmode-txt">Lorem ipsum dolor sit amet consectetur
+                                                        adipisicing elit. Eos iusto quo, necessitatibus cupiditate alias
+                                                        nulla dolorum quia non. Deleniti eum quos exercitationem
+                                                        cupiditate enim vel quae sapiente laborum veritatis
+                                                        facilis.</span>
                                                 </td>
                                             </tr>
                                         </table>
                                     </div>
                                     <!--[if gte mso 9]>
-                        </v:textbox>
-                        </v:rect>
-                        <![endif]-->
+                                    </v:textbox>
+                                  	</v:rect>
+                                    <![endif]-->
                                 </td>
                             </tr>
-                            <!-- HERO : END -->
-
-                            <!-- MAIN CONTENT : BEGIN -->
                             <tr>
-                                <td bgcolor="#ffffff">
+                                <td bgcolor="#ffffff"
+                                    style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;mso-table-lspace:0pt;mso-table-rspace:0pt;">
                                     <main>
-                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-
-                                            <!-- FEATURE ONE : BEGIN -->
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0"
+                                            width="100%"
+                                            style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;mso-table-lspace:0pt;mso-table-rspace:0pt;table-layout:auto;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;">
                                             <tr>
-                                                <td align="center" style="padding: 40px 40px 20px 40px; text-align: center;">
-                                                    <img src="images/5.png" width="520" border="0" class="img-responsive" style="border:0; width:520px; height: auto; max-width: 100%;" alt="integrations now available" />
+                                                <td align="center"
+                                                    style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 40px 40px 20px 40px; text-align: center;">
+                                                    <img src="https://ninjulia.github.io/email_background_simple/images/1.png"
+                                                        width="520" border="0"
+                                                        style="-ms-interpolation-mode:bicubic;border:0;height:auto;line-height:100%;outline:none;text-decoration:none;width:520px;max-width: 100%;"
+                                                        alt="lorem ipsum">
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td style="padding: 0px 40px 20px 40px; color:#050038; font-family: Arial, Helvetica, sans-serif; font-size: 32px; font-weight: 700; line-height: 1.25;">
-                                                    <h2 style="color:#050038; font-family: Arial, Helvetica, sans-serif; font-size: 32px; font-weight: 700; line-height: 1.25; margin:0; padding:0;">Top 10 ways to add files</h2>
+                                                <td
+                                                    style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0px 40px 20px 40px; color:#050038; font-family: Arial, Helvetica, sans-serif; font-size: 32px; font-weight: 700; line-height: 1.25;">
+                                                    <h2
+                                                        style="font-family:Helvetica, Arial, sans-serif;font-size:14px;font-weight:400;line-height:1.43 !important;color:#050038; font-family: Arial, Helvetica, sans-serif; font-size: 32px; font-weight: 700; line-height: 1.25; margin:0; padding:0;">
+                                                        Officiis ipsam iste</h2>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td style="padding: 0px 40px 20px 40px; color:#050038; font-family:Arial, Helvetica, sans-serif; font-size: 20px; font-weight: 400; line-height: 1.4; opacity: 0.6;">
+                                                <td
+                                                    style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0px 40px 20px 40px; color:#050038; font-family:Arial, Helvetica, sans-serif; font-size: 20px; font-weight: 400; line-height: 1.4; opacity: 0.6;">
                                                     <p style="Margin-top:0; Margin-bottom:0;">Lorem ipsum dolor sit amet
                                                         consectetur adipisicing elit. Eos iusto quo, necessitatibus
                                                         cupiditate alias nulla dolorum quia non. Deleniti eum quos
@@ -385,154 +237,177 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td align="left" style="padding: 0px 40px 40px 40px;">
-                                                    <div><!--[if mso]>
-                                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://github.com/ninjulia" style="padding:0px 42px;height:60px;v-text-anchor:middle; font-size:16px;width:auto;" arcsize="7%" stroke="f" fillcolor="#3f53d9">
-                                                          <w:anchorlock/>
-                                                          <center>
-                                                        <![endif]-->
-                                                            <a href="https://github.com/ninjulia"
-                                                      style="padding:0px 42px;background-color:#3f53d9;border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:bold;line-height:60px;text-align:center;text-decoration:none;width:auto;-webkit-text-size-adjust:none;">Learn how to upload</a>
+                                                <td align="left"
+                                                    style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0px 40px 40px 40px;">
+                                                    <div style="margin:0;padding:0;margin-bottom:0;">
                                                         <!--[if mso]>
-                                                          </center>
-                                                        </v:roundrect>
-                                                      <![endif]--></div>
-                                                </td>
-                                            </tr>
-                                            <!-- FEATURE ONE : END -->
-
-                                            <!-- FEATURE TWO : BEGIN -->
-                                            <tr>
-                                                <td align="center" style="padding: 40px 40px 20px 40px; text-align: center;">
-                                                    <img src="images/5.png" width="520" border="0" class="img-responsive" style="border:0; width:520px; height: auto; max-width: 100%;" alt="integrations now available" />
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding: 0px 40px 20px 40px; color:#050038; font-family: Arial, Helvetica, sans-serif; font-size: 32px; font-weight: 700; line-height: 1.25;">
-                                                    <h2 style="color:#050038; font-family: Arial, Helvetica, sans-serif; font-size: 32px; font-weight: 700; line-height: 1.25; margin:0; padding:0;">Magnam, aperiam dolor voluptates veniam quae</h2>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding: 0px 40px 20px 40px; color:#050038; font-family:Arial, Helvetica, sans-serif; font-size: 20px; font-weight: 400; line-height: 1.4; opacity: 0.6;">
-                                                    <p style="Margin-top:0; Margin-bottom:0;">Laboriosam dolorum ipsum repellendus perspiciatis natus, eum ipsa fuga quisquam minus tempore deleniti maiores asperiores nam, cumque sit quasi dignissimos sequi aliquam, ullam praesentium dolores sunt? Ea eum est dignissimos.</p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td align="left" style="padding: 0px 40px 80px 40px;">
-                                                    <div><!--[if mso]>
-                                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://github.com/ninjulia" style="padding:0px 42px;height:60px;v-text-anchor:middle; font-size:16px;width:auto;" arcsize="7%" stroke="f" fillcolor="#3f53d9">
-                                                          <w:anchorlock/>
-                                                          <center>
+                                                          <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://github.com/ninjulia" style="height:60px;v-text-anchor:middle;width:266px;" arcsize="7%" strokecolor="#3f53d9" fillcolor="#3f53d9">
+                                                            <w:anchorlock/>
+                                                              <center style="color:#ffffff;font-family:sans-serif;font-size:16px;font-weight:bold;">Inventore enim rerum</center>
+                                                            </v:roundrect>
                                                         <![endif]-->
-                                                            <a href="https://github.com/ninjulia"
-                                                      style="padding:0px 42px;background-color:#3f53d9;border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:bold;line-height:60px;text-align:center;text-decoration:none;width:auto;-webkit-text-size-adjust:none;">Lorem ipsum dolor sit</a>
-                                                        <!--[if mso]>
-                                                          </center>
-                                                        </v:roundrect>
-                                                      <![endif]--></div>
+                                                        <a href="https://github.com/ninjulia"
+                                                            style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;padding:0px 42px 0px 42px;font-size:0;color:#ffffff;font-weight:400;text-decoration:underline;background-color:#3f53d9;border:1px solid #3f53d9;border-radius:4px;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:bold;line-height:60px;text-align:center;text-decoration:none;-webkit-text-size-adjust:none;mso-hide:all;">Inventore
+                                                            enim rerum</a>
+                                                    </div>
                                                 </td>
                                             </tr>
-                                            <!-- FEATURE TWO : END -->
+                                            <tr>
+                                                <td align="center"
+                                                    style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 40px 40px 20px 40px; text-align: center;">
+                                                    <img src="https://ninjulia.github.io/email_background_simple/images/2.png"
+                                                        width="520" border="0"
+                                                        style="-ms-interpolation-mode:bicubic;border:0;height:auto;line-height:100%;outline:none;text-decoration:none;width:520px;max-width: 100%;"
+                                                        alt="doloar set">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td
+                                                    style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0px 40px 20px 40px; color:#050038; font-family: Arial, Helvetica, sans-serif; font-size: 32px; font-weight: 700; line-height: 1.25;">
+                                                    <h2
+                                                        style="font-family:Helvetica, Arial, sans-serif;font-size:14px;font-weight:400;line-height:1.43 !important;color:#050038; font-family: Arial, Helvetica, sans-serif; font-size: 32px; font-weight: 700; line-height: 1.25; margin:0; padding:0;">
+                                                        Magnam, aperiam dolor</h2>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td
+                                                    style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0px 40px 20px 40px; color:#050038; font-family:Arial, Helvetica, sans-serif; font-size: 20px; font-weight: 400; line-height: 1.4; opacity: 0.6;">
+                                                    <p
+                                                        style="margin:0;padding:0;margin-bottom:0;font-family:Helvetica, Arial, sans-serif;font-size:14px;font-weight:400;line-height:1.43 !important;Margin-top:0; Margin-bottom:0;">
+                                                        Laboriosam dolorum ipsum repellendus perspiciatis natus, eum
+                                                        ipsa fuga quisquam minus tempore deleniti maiores asperiores
+                                                        nam, cumque sit quasi dignissimos sequi aliquam, ullam
+                                                        praesentium dolores sunt? Ea eum est dignissimos.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="left"
+                                                    style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0px 40px 80px 40px;">
+                                                    <div style="margin:0;padding:0;margin-bottom:0;">
+                                                        <!--[if mso]>
+                                                          <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://github.com/ninjulia" style="height:60px;v-text-anchor:middle;width:331px;" arcsize="7%" strokecolor="#3f53d9" fillcolor="#3f53d9">
+                                                            <w:anchorlock/>
+                                                              <center style="color:#ffffff;font-family:sans-serif;font-size:16px;font-weight:bold;">Aliquam vel mollitia</center>
+                                                            </v:roundrect>
+                                                        <![endif]-->
+                                                        <a href="https://github.com/ninjulia"
+                                                            style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;padding:0px 42px 0px 42px;font-size:0;color:#ffffff;font-weight:400;text-decoration:underline;background-color:#3f53d9;border:1px solid #3f53d9;border-radius:4px;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:bold;line-height:60px;text-align:center;text-decoration:none;-webkit-text-size-adjust:none;mso-hide:all;">Aliquam
+                                                            vel mollitia</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
                                         </table>
                                     </main>
                                 </td>
                             </tr>
-                            <!-- MAIN CONTENT : END -->
-
-                            <!-- SOCIAL : BEGIN -->
                             <tr>
-                                <td bgcolor="#f3f4f8">
-                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <td bgcolor="#f3f4f8"
+                                    style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;mso-table-lspace:0pt;mso-table-rspace:0pt;">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                                        style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;mso-table-lspace:0pt;mso-table-rspace:0pt;table-layout:auto;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;">
                                         <tr>
                                             <td
-                                                style="padding: 42px 40px 16px 40px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 1.43; color: #0a0a0a; text-align: center; font-weight:400;">
-                                                <a href="#" style="font-size: 16px; font-weight: 400;color:#0a0a0a!important; text-decoration: none;">Blog</a>
+                                                style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 42px 40px 16px 40px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 1.43; color: #0a0a0a; text-align: center; font-weight:400;">
+                                                <a href="#"
+                                                    style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;color:#050038;font-weight:600;text-decoration:underline;font-size: 16px; font-weight: 400;color:#0a0a0a!important; text-decoration: none;">Blog</a>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td align="center" style="padding: 0px 0px 42px 0px; text-align: center;">
-
-                                                <table align="center" style="text-align: center;">
-                                                    
+                                            <td align="center"
+                                                style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0px 0px 42px 0px; text-align: center;">
+                                                <table align="center"
+                                                    style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;mso-table-lspace:0pt;mso-table-rspace:0pt;table-layout:auto;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;text-align: center;"
+                                                    role="presentation">
                                                     <tr>
-                                                        <td>
-                                                            <a href="https://www.facebook.com" target="_blank" style="text-decoration: none; font-size:12px; color:#050038;">
-                                                            <img src="images/facebook.png" width="56" height="56" style="margin:0; padding:0; border:none; display:block; width:56px; height:56px;" border="0" alt="facebook">
-                                                            </a> 
+                                                        <td
+                                                            style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;mso-table-lspace:0pt;mso-table-rspace:0pt;">
+                                                            <a href="https://www.facebook.com" target="_blank"
+                                                                style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;color:#050038;font-weight:600;text-decoration:underline;text-decoration: none; font-size:12px; color:#050038;">
+                                                                <img src="https://ninjulia.github.io/email_background_simple/images/facebook.png"
+                                                                    width="56" height="56"
+                                                                    style="-ms-interpolation-mode:bicubic;border:0;height:auto;line-height:100%;outline:none;text-decoration:none;margin:0; padding:0; border:none; display:block; width:56px; height:56px;"
+                                                                    border="0" alt="facebook">
+                                                            </a>
                                                         </td>
-                                                        
-                                                        <td>
-                                                            <a href="https://www.twitter.com" target="_blank" style="text-decoration: none; font-size:12px; color:#050038;">
-                                                            <img src="images/twitter.png" width="56" height="56" style="margin:0; padding:0; border:none; display:block; width:56px; height:56px;" border="0" alt="twitter">
-                                                            </a> 
+                                                        <td
+                                                            style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;mso-table-lspace:0pt;mso-table-rspace:0pt;">
+                                                            <a href="https://www.twitter.com" target="_blank"
+                                                                style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;color:#050038;font-weight:600;text-decoration:underline;text-decoration: none; font-size:12px; color:#050038;">
+                                                                <img src="https://ninjulia.github.io/email_background_simple/images/twitter.png"
+                                                                    width="56" height="56"
+                                                                    style="-ms-interpolation-mode:bicubic;border:0;height:auto;line-height:100%;outline:none;text-decoration:none;margin:0; padding:0; border:none; display:block; width:56px; height:56px;"
+                                                                    border="0" alt="twitter">
+                                                            </a>
                                                         </td>
-                                                        <td>
-                                                            <a href="https://www.linkedin.com" target="_blank" style="text-decoration: none; font-size:12px; color:#050038;">
-                                                            <img src="images/in.png" width="56" height="56" style="margin:0; padding:0; border:none; display:block; width:56px; height:56px;" border="0" alt="linkedin">
-                                                            </a> 
+                                                        <td
+                                                            style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;mso-table-lspace:0pt;mso-table-rspace:0pt;">
+                                                            <a href="https://www.linkedin.com" target="_blank"
+                                                                style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;color:#050038;font-weight:600;text-decoration:underline;text-decoration: none; font-size:12px; color:#050038;">
+                                                                <img src="https://ninjulia.github.io/email_background_simple/images/in.png"
+                                                                    width="56" height="56"
+                                                                    style="-ms-interpolation-mode:bicubic;border:0;height:auto;line-height:100%;outline:none;text-decoration:none;margin:0; padding:0; border:none; display:block; width:56px; height:56px;"
+                                                                    border="0" alt="linkedin">
+                                                            </a>
                                                         </td>
                                                     </tr>
                                                 </table>
-
                                             </td>
                                         </tr>
-
                                     </table>
                                 </td>
                             </tr>
-                            <!-- SOCIAL : END -->
-
-                            <!-- FOOTER : BEGIN -->
                             <tr>
-                                <td bgcolor="#f3f4f8" style="background-color:#f3f4f8;">
-                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <td bgcolor="#f3f4f8"
+                                    style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;mso-table-lspace:0pt;mso-table-rspace:0pt;background-color:#f3f4f8;">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                                        style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;mso-table-lspace:0pt;mso-table-rspace:0pt;table-layout:auto;border-spacing:0 !important;border-collapse:collapse !important;table-layout:fixed !important;margin:0 auto !important;">
                                         <tr>
                                             <td
-                                                style="padding: 0px 40px 40px 40px; font-family: arial, helvetica, sans-serif; font-size: 16px; line-height: 1.24; color: #0a0a0a; text-align: center; font-weight:400;">
-                                                <address style="font-size: 16px; font-style: normal; font-weight: 400;color: #0a0a0a;">
-                                                    <a href="#" style="font-size: 16px; color: #0a0a0a!important; text-decoration: none;">1234 Main Street, Anywhere, US 56789</a>
+                                                style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 0px 40px 40px 40px; font-family: arial, helvetica, sans-serif; font-size: 16px; line-height: 1.24; color: #0a0a0a; text-align: center; font-weight:400;">
+                                                <address
+                                                    style="font-size: 16px; font-style: normal; font-weight: 400;color: #0a0a0a;">
+                                                    <a href="#"
+                                                        style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;color:#050038;font-weight:600;text-decoration:underline;font-size: 16px; color: #0a0a0a!important; text-decoration: none;">1234
+                                                        Main Street, Anywhere, US 56789</a>
                                                 </address>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td
-                                                style="padding: 20px; font-family: sans-serif; font-size: 16px; line-height: 1.24px; color: #050038; text-align: left; font-weight:400;">
-                                                <p>Based on a design and functionality from Miro as highlighted on <a
+                                                style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;mso-table-lspace:0pt;mso-table-rspace:0pt;padding: 20px; font-family: sans-serif; font-size: 16px; line-height: 1.24; color: #050038; text-align: left; font-weight:400;">
+                                                Based on a design and functionality from Miro as highlighted on <a
                                                     href="https://reallygoodemails.com/emails/10-ways-to-visualize-your-ideas"
-                                                    target="_blank">Really Good
-                                                    Emails.</a> Images from <a href="https://placeimg.com/"
-                                                    target="_blank">placeimg.com</a>. All
-                                                copyrights and trademarks remain property of their
-                                                respective owners. Code help from <a href="https://backgrounds.cm/"
-                                                    target="_blank">Campaign Monitor's Background Image Generator</a> and <a
+                                                    target="_blank"
+                                                    style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;color:#050038;font-weight:600;text-decoration:underline;font-size: 16px;line-height: 1.24; color: #0a0a0a;font-weight: 400;">Really
+                                                    Good Emails.</a> All copyrights and trademarks remain property of
+                                                their respective owners. Code help from <a
+                                                    href="https://backgrounds.cm/" target="_blank"
+                                                    style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;color:#050038;font-weight:600;text-decoration:underline;font-size: 16px;line-height: 1.24; color: #0a0a0a;font-weight: 400;">Campaign
+                                                    Monitor's Background Image Generator</a> and <a
                                                     href="https://www.litmus.com/blog/the-ultimate-guide-to-background-images-in-email/"
-                                                    target="_blank">Litmus' Ultimate Guide to Background Images in Email.</a>
-                                                </p>
+                                                    target="_blank"
+                                                    style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:0;color:#050038;font-weight:600;text-decoration:underline;font-size: 16px;line-height: 1.24; color: #0a0a0a;font-weight: 400;">Litmus'
+                                                    Ultimate Guide to Background Images in Email.</a>
                                             </td>
                                         </tr>
-
                                     </table>
                                 </td>
                             </tr>
-                            <!-- FOOTER : END -->
-
                         </table>
                     </td>
                 </tr>
             </table>
-            <!-- Email Body : END -->
-
             <!--[if mso]>
-            </td>
-            </tr>
-            </table>
-            <![endif]-->
+        </td>
+      </tr>
+    </table>
+        <![endif]-->
         </div>
         <!--[if mso]>
-            </td>
-            </tr>
-            </table>
-            <![endif]-->
+      </td>
+    </tr>
+  </table>
+      <![endif]-->
     </center>
 </body>
 
